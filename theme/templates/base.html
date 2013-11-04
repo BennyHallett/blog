@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{TITLE}} | Benny Hallett</title>
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/reset.css" />
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="container">
+        <h1>Benny Hallett</h1>
+        <h2>Code monkey, beer maker, chilli grower</h2>
+      </div> <!-- /container -->
+    </div> <!-- /header -->
+
+    <div class="container">
+      <div class="sidebar">
+        <div class="sidebar-item">
+          <h3>Twitter</h3>
+          <a href="http://twitter.com/bennyhallett">@bennyhallett</a>
+          <div class="tweets">
+          </div> <!-- /tweets -->
+        </div> <!-- /sidebar-item (twitter) -->
+
+        <div class="sidebar-item">
+          <h3>Github</h3>
+          <a href="http://github.com/BennyHallett">BennyHallett</a>
+        </div> <!-- /sidebar-item -->
+
+        <div class="sidebar-item">
+          <h3>Stackoverflow</h3>
+          <a href="http://stackoverflow.com/users/109246/benny">Benny</a><br />
+          <a href="http://stackexchange.com/users/38125">
+            <img src="http://stackexchange.com/users/flair/38125.png" class="so-flair" alt="profile for Benny on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Benny on Stack Exchange, a network of free, community-driven Q&amp;A sites">
+          </a>
+          <div id = "answers" class="answers">
+          </div> <!-- /answers -->
+        </div> <!-- /sidebar-item -->
+      </div> <!-- /sidebar -->
+
+      <div class="main">
+        {% block content %}
+        {% endblock %}
+      </div> <!-- /main -->
+    </div> <!-- /container -->
+    <script type="text/javascript" src="{{ SITEURL }}/theme/js/so.js"></script>
+  </body>
+</html>
