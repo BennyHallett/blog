@@ -26,4 +26,4 @@ As we can see in this screenshot from [DoomRL](http://doom.chaosforge.org), the 
 
 If we take the view that a partial screen also renders the one below it, the renderer peeks at the screen stack from top to bottom, and keeps moving down until it finds a screen that isn't a partial screen (or gets to the bottom), and then moves back up the stack, rendering each one on top of the last. Keypresses and clicks are sent to the top screen only, as it is the one which has focus.
 
-In the small games that I've worked on so far, this model has solved the problem quite well. It's a small problem, but one that can take away focus from actually developing a game. I plan on releasing a python version of stack-based-screens in the near future.
+In the small games that I've worked on so far, this model has solved the problem quite well. It's a small problem, but one that can take away focus from actually developing a game. I've started work on a [javascript version of stack-based-screens](https://github.com/BennyHallett/stack-based-screens) which can be found on Github.
