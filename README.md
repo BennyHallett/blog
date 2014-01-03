@@ -1,4 +1,4 @@
 blog
 ====
 
-Blog
+Blog located at http://bennyhallett.com
