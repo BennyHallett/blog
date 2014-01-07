@@ -47,7 +47,12 @@ body {
 
 .main h2 {
   font-size: 1.6em;
-  margin-bottom: 1em;
+  margin-bottom: .7em;
+}
+
+.main h3 {
+  font-size: 1.3em;
+  margin-bottom: .8em;
 }
 
 .entry-title {
@@ -98,4 +103,9 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.main em {
+  color: #fde142;
+  font-style: normal;
 }
