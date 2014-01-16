@@ -7,3 +7,4 @@ Things to write about
 * Arbo
 * T
 * Script all the things
+* Review of the 'Building awesome ruby command line apps' book
