@@ -15,7 +15,7 @@ Your goal is to make the biggest impact you can on the world before you die.
 
 
 
-![An @ moving about the world]({filename}/images/conquest-rl-pre-alpha-game.png)
+![An @ moving about the world]({filename}/images/conquest-rl-pre-alpha-world.png)
 
 I'd like to do more than simply clone Mount and Blade in a roguelike style. Some features that are currently on the radar include
 
