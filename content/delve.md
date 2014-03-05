@@ -1,22 +1,40 @@
-Title: delve - an opinionated roguelike library
+Title: delve - an opinionated roguelike library in Ruby
 Date: 2014-03-05 18:42
 Category: Gamedev
-Tags: gamedev, roguelike, library, delve
+Tags: gamedev, roguelike, library, delve, ruby
 Slug: delve
 Author: bennyhallett
-Summary: The delve library for creating roguelikes, fast!
+Summary: The delve library for creating roguelikes in Ruby, fast!
 
-Delve is an opinionated library for creating roguelikes.
+Delve is an opinionated library for creating roguelikes in the Ruby programming language. It's flexible enough to let you create your roguelike in any way you please, but it also lets you get up and running quickly if you adhere to it's style.
 
-It's heavinly influcenced by libraries such as libtcod and rot.js. Some of the code, such as the dungeon generators and the scheduling system is ported from rot.js to ruby. The rot.js license is included in the source.
+Delve is heavily influcenced by libraries such as libtcod and rot.js. These tools provide handy modules such as Field of View, Dungeon Generation, and Turn Scheduling, that make developing a roguelike that much easier. Delve has continued that trend, and in fact some of the code is ported from rot.js to ruby. Although delve and rot.js share the same license, the rot.js license is included in the delve source for completeness.
 
-Its opinionated because it directs users towards creating games using stack based screens and a component system. 
+In addition to these roguelike tools, delve provides an additional view system. This system is based on stack-based-screens, and idea that I have spoken about before. In addition to the screen management, delve provides widgets that make developing an ascii user interface easier. Some widgets include a progress bar, menu, screen-border, and a viewport for showing a focussed section of the world inside a panel.
 
-The hero feature the auto-roguelike, which allows developers to create an '@ walking around the dungeon' roguelike in a single simple command
+The game characters and items are intended to be implemented using an entity/component system. The entity, along with basic movement and collision components are included in delve by default.
+
+At the time of writing, delve isn't feature complete. Some key features, such as field of view, aren't yet implemented, but will be in future versions.
+
+The last big feature of delve is the auto-roguelike. This feature allows developers to create an '@ walking around the dungeon' roguelike in a single simple command
 
 `delve gamename`
+
+To then start the game, you run
+
 `cd gamename`
+
+`bundle install`
+
 `ruby -Ilib bin/gamename`
+
+This game that you have just created includes:
+
+* A title screen, with 'New Game' and 'Exit' options.
+* A loading screen, which sets up the game.
+* A game screen, in which the user can use the vi keys to move around the world.
+
+Again, this feature is yet to be completed. In the future, the command line will allow developers to pass in arguments stating which renderer they want (i.e curses, or tiles), which turn scheduler to use, as well as which dungeon generator to use. The current defaults are to use the Curses renderer and the rogue algorithm generator. Currently the turn scheduler isn't used in the game generation, but should be included in v0.0.7
 
 The list of things included in delve (as of 0.0.6) is:
 
@@ -25,3 +43,18 @@ The list of things included in delve (as of 0.0.6) is:
 * Rogue dungeon generator
 * Noise generator
 * Cellular automata generator
+* Turn engine
+* Several turn schedulers
+* Movement and Collision components
+
+Delve's widgets include:
+
+* Border
+* Key-Value
+* Menu
+* MultiLine text
+* Progress bar
+* Text
+* Viewport
+
+The code is licensed under the 3-clause BSD license.
