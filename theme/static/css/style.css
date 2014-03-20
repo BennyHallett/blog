@@ -1,111 +1,67 @@
 body {
-  font-family: 'Share Tech', sans-serif;
-  background: #232323;
-  color: #ededed;
+  background: #dedede;
+  color: #1c1c1c;
+  font-size: 1.7em;
+  line-height: 1.6em;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.container {
-  width: 90%;
+.container { 
+  width: 75%;
   margin: 0 auto;
-  padding: 1em 0;
-}
-
-.header {
-  background: #fde142;
-  color: #232323;
-}
-
-.header h1 {
-  font-size: 2em;
-}
-
-.header a {
-  text-decoration: none;
-  color: #232323;
-}
-
-.header a:hover {
-  text-decoration: none;
-}
-
-.sidebar {
-  width: 25%;
-  float: right;
-}
-
-.sidebar h3 {
-  font-size: 1.3em;
-}
-
-.sidebar-item {
-  margin-bottom: 2em;
 }
 
 .main {
-  width: 70%;
+  width: 75%;
+  float: left;
 }
 
-.main h2 {
-  font-size: 1.6em;
-  margin-bottom: .7em;
+.sidebar {
+  width: 20%;
+  float: right;
 }
 
-.main h3 {
-  font-size: 1.3em;
-  margin-bottom: .8em;
+.sidebar-item {
+  padding: 0.6em 0;
 }
 
-.entry-title {
-  font-size: 1.3em!important;
-  margin-bottom: .5em!important;
+a {
+  text-decoration: none;
+  color: #4245dd;
+}
+
+h1, h2, h3, a h1, a h2, a h3, h1 a, h2 a , h3 a {
+  color: #1c1c1c;
+}
+
+.header {
+  padding: 1em 0;
+}
+
+h1, h1 a, a h1 {
+  font-size: 1.5em;
+}
+
+h3, h3 a, a h3 {
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
+#post-list li {
+  margin-bottom: 1em;
+}
+
+.hentry footer {
+  font-size: 0.5em;
+  color: #5d5d5d;
+  line-height: 1em;
 }
 
 .entry-content {
-  margin-top: .5em;
+  font-size: 0.8em;
+  line-height: 1.3em;
 }
 
-.entry-content p {
-  margin-bottom: .8em;
-}
-
-.entry-content ul {
-  list-style: inherit;
-  margin-bottom: .8em;
-}
-
-.entry-content li {
-  margin-left: 1em;
-}
-
-.entry-content img {
-  border: 2px solid #fde142;
-  padding: .3em;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.entry-content h1 {
-  margin-bottom: 1em;
-  font-size: 1.5em;
-  color: #fde142;
-}
-
-article.hentry {
-  margin-bottom: 1em;
-}
-
-
-a {
-  color: #fde142;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.main em {
-  color: #fde142;
-  font-style: normal;
+section#content h2:first {
+  display: none;
 }
