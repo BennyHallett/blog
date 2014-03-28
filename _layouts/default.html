@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Reset -->
+        <link rel="stylesheet" href="/css/reset.css">
+
+        <!-- Skeleton -->
+        <link rel="stylesheet" href="/css/skeleton.css">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/icons.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          {% include header.html %}
+
+          <div class="row">
+            <div class="sixteen columns">
+              <div class="twelve columns alpha">
+                <div id="main">
+                  {{ content }}
+                </div>
+              </div>
+
+              <div class="four columns omega">
+                {% include projects.html %}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {% include footer.html %}
+    </body>
+</html>

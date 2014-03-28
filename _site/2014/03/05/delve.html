@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>delve - an opinionated roguelike library for Ruby</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Reset -->
+        <link rel="stylesheet" href="/css/reset.css">
+
+        <!-- Skeleton -->
+        <link rel="stylesheet" href="/css/skeleton.css">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/icons.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="row">
+  <div class="sixteen columns">
+    <div class="twelve columns alpha">
+      <h1 class="title"><a href="/">Benny Hallett</a></h1>
+    </div>
+
+    <div class="four columns omega">
+      <div class="links">
+        <a href="http://github.com/bennyhallett" class="icon github"></a>
+        <a href="http://twitter.com/bennyhallett" class="icon twitter"></a>
+        <a href="https://stackoverflow.com/users/109246/benny" class="icon stackoverflow"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+          <div class="row">
+            <div class="sixteen columns">
+              <div class="twelve columns alpha">
+                <div id="main">
+                  <h2>delve - an opinionated roguelike library for Ruby</h2>
+<p class="meta">05 Mar 2014</p>
+
+<div class="post">
+<p>Delve is an opinionated library for creating roguelikes in the Ruby programming language. It&#39;s flexible enough to let you create your roguelike in any way you please, but it also lets you get up and running quickly if you adhere to it&#39;s style.</p>
+
+<p>Delve is heavily influcenced by libraries such as libtcod and rot.js. These tools provide handy modules such as Field of View, Dungeon Generation, and Turn Scheduling, that make developing a roguelike that much easier. Delve has continued that trend, and in fact some of the code is ported from rot.js to ruby. Although delve and rot.js share the same license, the rot.js license is included in the delve source for completeness.</p>
+
+<p>In addition to these roguelike tools, delve provides an additional view system. This system is based on stack-based-screens, and idea that I have spoken about before. In addition to the screen management, delve provides widgets that make developing an ascii user interface easier. Some widgets include a progress bar, menu, screen-border, and a viewport for showing a focussed section of the world inside a panel.</p>
+
+<p>The game characters and items are intended to be implemented using an entity/component system. The entity, along with basic movement and collision components are included in delve by default.</p>
+
+<p>At the time of writing, delve isn&#39;t feature complete. Some key features, such as field of view, aren&#39;t yet implemented, but will be in future versions.</p>
+
+<p>The last big feature of delve is the auto-roguelike. This feature allows developers to create an &#39;@ walking around the dungeon&#39; roguelike in a single simple command</p>
+
+<div class="highlight"><pre><code class="bash">delve gamename
+</code></pre></div>
+
+<p>To then start the game, you run</p>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd </span>gamename
+bundle install
+ruby -Ilib bin/gamename
+</code></pre></div>
+
+<p>This game that you have just created includes:</p>
+
+<ul>
+<li>A title screen, with &#39;New Game&#39; and &#39;Exit&#39; options.</li>
+<li>A loading screen, which sets up the game.</li>
+<li>A game screen, in which the user can use the vi keys to move around the world.</li>
+</ul>
+
+<p>Again, this feature is yet to be completed. In the future, the command line will allow developers to pass in arguments stating which renderer they want (i.e curses, or tiles), which turn scheduler to use, as well as which dungeon generator to use. The current defaults are to use the Curses renderer and the rogue algorithm generator. Currently the turn scheduler isn&#39;t used in the game generation, but should be included in v0.0.7</p>
+
+<p>The list of things included in delve (as of 0.0.6) is:</p>
+
+<ul>
+<li>Entity system</li>
+<li>Stack based screens</li>
+<li>Rogue dungeon generator</li>
+<li>Noise generator</li>
+<li>Cellular automata generator</li>
+<li>Turn engine</li>
+<li>Several turn schedulers</li>
+<li>Movement and Collision components</li>
+</ul>
+
+<p>Delve&#39;s widgets include:</p>
+
+<ul>
+<li>Border</li>
+<li>Key-Value</li>
+<li>Menu</li>
+<li>MultiLine text</li>
+<li>Progress bar</li>
+<li>Text</li>
+<li>Viewport</li>
+</ul>
+
+<p>The code is licensed under the 3-clause BSD license.</p>
+
+</div>
+
+                </div>
+              </div>
+
+              <div class="four columns omega">
+                <div class="sidebar-item">
+  <div class="outline">
+    I'm Benny, a Ruby developer from the Central Coast of New South Wales. I enjoy writing well structured, well tested code, and try to share what I make. I also make beer and grow chillis, and share my recipes for both.
+  </div>
+</div>
+
+<div class="sidebar-item">
+  <h1>Delve</h1>
+  <ul>
+    <li><a href="/delve">about Delve</a></li>
+    <li><a href="http://github.com/bennyhallett/delve">on Github</a></li>
+  </ul>
+</div>
+
+<div class="sidebar-item">
+  <h1>Mochening</h1>
+  <ul>
+    <li><a href="/mochening">about Mochening</a></li>
+    <li><a href="http://github.com/bennyhallett/mochening">on Github</a></li>
+    <li><a href="https://rubygems.org/gems/mochening">on Rubygems</a></li>
+  </ul>
+</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+  <div class="container">
+    <div class="sixteen columns">
+      <p>All original content licensed under the MIT license</p>
+    </div>
+  </div>
+</div>
+
+    </body>
+</html>
