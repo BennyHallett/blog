@@ -24,6 +24,11 @@ h1.title a:hover {
   text-decoration: none;
 }
 
+.sidebar-item {
+  font-size: 0.9em;
+  line-height: 1.2em;
+}
+
 .sidebar-item h1 {
   margin-bottom: 0;
 }
@@ -31,11 +36,6 @@ h1.title a:hover {
 .title {
   padding-top: .3em;
   font-size: 2em;
-}
-
-.outline {
-  font-size: 0.9em;
-  line-height: 1.2em;
 }
 
 a, a:visited {
