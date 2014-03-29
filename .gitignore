@@ -1,5 +1,5 @@
 *.pyc
 output/*
-build.sh
-deploy.sh
+_build.sh
+_deploy.sh
 _site/*
