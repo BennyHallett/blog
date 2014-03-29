@@ -2,3 +2,4 @@
 output/*
 build.sh
 deploy.sh
+_site/*
