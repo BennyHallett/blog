@@ -63,3 +63,8 @@ div.highlight {
   border-left: 3px solid #dc3d24;
   padding: 0 1em;
 }
+
+div.post ul {
+  list-style: disc;
+  margin-left: 1em;
+}
