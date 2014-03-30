@@ -16,3 +16,6 @@ As I come up on 10 years studying and practicing software engineering, I've been
 * Pay more attention in Uni class. That OO stuff that you thought you know all about? It's going to be super important to you.
 * Spend more time actually at Uni, with other people in your course.
 * Change jobs every two to three years.
+* Start blogging ASAP. Improve your writing.
+* Read more books
+* Stay healthy. It's way more important to your coding ability than you think.
