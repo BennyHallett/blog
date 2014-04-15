@@ -8,3 +8,8 @@ Things to write about
 * Script all the things
 * Review of the 'Building awesome ruby command line apps' book
 * How does health affect programming ability?
+
+**Ruby**
+
+* How variable scoping works
+* How metaprrogramming works, or how Rails Magic works
