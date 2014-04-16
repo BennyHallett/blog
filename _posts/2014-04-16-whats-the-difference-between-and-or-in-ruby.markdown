@@ -45,4 +45,14 @@ The and/or operators are generally used to chain methods together. This can be d
 start_engine and drive
 {% endhighlight %}
 
-In the example above, if the engine fails to start, then the vehicle won't drive.
+In the example above, if the engine fails to start, then the vehicle won't drive. Another example may be the movement of a child. 
+
+{% highlight ruby %}
+def move
+  walk or crawl or roll
+end
+{% endhighlight %}
+
+In this example, a child can move in multiple ways, but prefers the most efficient method. They will attempt to walk, and only attemt to crawl if walking fails. Similarly, they will only attempt to roll if crawling fails.
+
+Chaining methods together like this is a useful tool for creating clean, easy to understand code.
