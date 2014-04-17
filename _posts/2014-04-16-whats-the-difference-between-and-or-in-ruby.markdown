@@ -36,7 +36,9 @@ In the second example, the || section is evaluated first. So `false || true` is 
 For boolean logic, generally && and || are used.
 
 {% highlight ruby %}
-example
+def can_read?
+  (daytime? || inside?) && wearing_glasses?
+end
 {% endhighlight %}
 
 The and/or operators are generally used to chain methods together. This can be done because in Ruby, `nil` and `false` always resolve to `false`, where everything else resolves to `true`.
