@@ -54,4 +54,8 @@ Fermenting at between 24 and 26 degrees celsius. Adding 15g of Amarillo hops aft
 
 **Results**:
 
-Awaiting completion of primary fermentation.
+This beer was very nice. A couple of people I gave bottles to enjoyed it, and compared it to some store-bought beers. I'm not convinced it was as good as that, but it was a tasty beer.
+
+The beer was quite bitter, and had a little amarillo aroma as you were drinking it. However it wasn't the IPA style that I was going for. It was probably too bitter, and not aromatic enough.
+
+Next time I brew this beer, I think I'll be reducing the amount of bittering hops, and increasing the amount of hops later in the boil, along with 2 to 3 times the amount of dry hops.
