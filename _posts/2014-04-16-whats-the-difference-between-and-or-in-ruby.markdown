@@ -11,13 +11,13 @@ After inheriting my first Rails project, one of the first things that confused m
 * and
 * or
 
-== and === are also included, but we can ignore these for the sake of this post.
+`==` and `===` are also included, but we can ignore these for the sake of this post.
 
 **So what's the difference then?**
 
 *The first difference is precedence.*
 
-&& has the highest precedence, followed by ||. Both and and or have the same precedence.
+`&&` has the highest precedence, followed by `||`. Both and and or have the same precedence.
 
 {% highlight ruby %}
 false and false or true
@@ -29,11 +29,11 @@ false and false || true
 
 In the first example here, the expression is evaluated in order. So `false and false` is `false`, and taking that result, `false or true` is `true`.
 
-In the second example, the || section is evaluated first. So `false || true` is `true`, and taking that result, `false and true` is false.
+In the second example, the `||` section is evaluated first. So `false || true` is `true`, and taking that result, `false and true` is false.
 
 *The other difference is how they are used.*
 
-For boolean logic, generally && and || are used.
+For boolean logic, generally `&&` and `||` are used.
 
 {% highlight ruby %}
 def can_read?
