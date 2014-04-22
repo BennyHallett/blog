@@ -68,3 +68,15 @@ div.post ul {
   list-style: disc;
   margin-left: 1em;
 }
+
+p.meta {
+  margin-top: 0.2em;
+  font-size: smaller;
+  font-style: italic;
+  color: #767676;
+}
+
+p code {
+  color: #434343;
+  font-size: smaller;
+}
