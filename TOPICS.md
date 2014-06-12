@@ -9,10 +9,14 @@ Things to write about
 * Review of the 'Building awesome ruby command line apps' book
 * How does health affect programming ability?
 * Why Mochening was a bad idea
+* Why you should automate your dev environment
+* Going deep
+* Keep it clean (Delete commented code, or all comments, keep to your code standards)
 
 **Ruby**
 
 * How variable scoping works
 * How metaprrogramming works, or how Rails Magic works
 * When should  you use a class vs a module
-* Shhould you be puttingg methods on our models?
+* Should you be puttingg methods on our models?
+* Adding shit to vim to make ruby dev amazing
