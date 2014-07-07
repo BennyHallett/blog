@@ -1,0 +1,3 @@
+<div class="index">
+  <%= Enum.join(@content, "<br />\n") %>
+</div>

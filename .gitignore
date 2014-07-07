@@ -1,5 +1,5 @@
-*.pyc
-output/*
-_build.sh
-_deploy.sh
-_site/*
+/_build
+/build
+/deps
+erl_crash.dump
+*.ez
