@@ -25,6 +25,7 @@ defmodule Bennyhallett.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
-    [{ :obelisk, github: "bennyhallett/obelisk" }]
+    #[{ :obelisk, github: "bennyhallett/obelisk" }]
+    [{ :obelisk, git: "file:///home/benny/projects/obelisk" }]
   end
 end

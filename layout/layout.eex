@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>This should be replaced by whats in site.yml</title>
+    <title>Benny Hallett | some catch phrase</title>
     <%= @css %>
     <%= @js %>
   </head>
 
   <body>
     <div class="container">
-      <h1>obelisk</h1>
-      <%= @content %>
+      <div class="row header">
+        <div class="four columns alpha">
+          <h1>Benny Hallett</h1>
+          <h2>developer</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="four columns alpha">
+          <hr />
+          <!-- circular img -->
+          <p class="about">
+            Here is some interesting information about me la~
+          </p>
+          <div class="buttons">
+            <a href="http://github.com/bennyhallett"><i class="fa fa-github fa-2">Github</a>
+          </div>
+          <hr />
+        </div>
+        
+        <div class="twelve columns omega">
+          <hr />
+          <%= @content %>
+        </div>
+      </div>
     </div>
   </body>
 </html>
