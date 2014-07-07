@@ -3,6 +3,7 @@
   <head>
     <title>Benny Hallett | some catch phrase</title>
     <%= @css %>
+    <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css" />
     <%= @js %>
   </head>
 
@@ -20,10 +21,12 @@
           <hr />
           <!-- circular img -->
           <p class="about">
-            Here is some interesting information about me la~
+            I'm Benny, a software developer from the Central Coast of New South Wales, Australia. I'm currently working with Ruby, and I'm learning <a href="http://elixir-lang.org">Elixir</a> in my spare time. I enjoy writing well structured, well tested code, and try to share what I learn. I also make beer and grow chillis, and share my recipes for both.
           </p>
           <div class="buttons">
-            <a href="http://github.com/bennyhallett"><i class="fa fa-github fa-2">Github</a>
+            <a href="http://github.com/bennyhallett"><i class="fa fa-github fa-2x"></i></a>
+            <a href="http://twitter.com/bennyhallett"><i class="fa fa-twitter fa-2x"></i></a>
+            <a href="https://stackoverflow.com/users/109246/benny"><i class="fa fa-stack-overflow fa-2x"></i></a>
           </div>
           <hr />
         </div>
