@@ -3,3 +3,7 @@ output/*
 _build.sh
 _deploy.sh
 _site/*
+_build
+build
+posts
+deps
