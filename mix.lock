@@ -1,3 +1,5 @@
-%{"hoedown": {:git, "git://github.com/hoedown/hoedown.git", "0610117f44b173a4e2112afb2f510156a32355b5", []},
-  "markdown": {:git, "git://github.com/devinus/markdown.git", "0345e2044ba71780ba02b2591f1017703d0fa148", []},
-  "obelisk": {:git, "file:///home/benny/projects/obelisk", "45fdcbce359df9e4bd03d3aff8a4ebebeb3aa413", []}}
+%{"chronos": {:git, "git://github.com/nurugger07/chronos.git", "28ebaf433ae7bf605fecf665ad6b92d80eda2e2a", []},
+  "hoedown": {:git, "git://github.com/hoedown/hoedown.git", "0610117f44b173a4e2112afb2f510156a32355b5", []},
+  "markdown": {:git, "git://github.com/devinus/markdown.git", "7b1912a693611a9445574e099687879948bafbae", []},
+  "obelisk": {:git, "file:///home/benny/projects/obelisk", "fd1bfbc8925f0185059498578c6a8da8cb2926b7", []},
+  "yamerl": {:git, "git://github.com/yakaz/yamerl.git", "6d57c3945af916f0c3b248cc3ec0eb51eea78a74", []}}
