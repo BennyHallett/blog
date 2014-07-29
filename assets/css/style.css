@@ -38,4 +38,14 @@ a:hover {
 
 .about {
   font-size: smaller;
+  line-height: 1.3em;
+}
+
+.project {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.project h5 {
+  font-size: smaller;
 }
