@@ -1,6 +1,7 @@
 body {
   font-size: 18px;
   background-color: #f2f2f2;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 a, a:visited {
@@ -12,40 +13,79 @@ a:hover {
 }
 
 .header {
-  text-align: center;
   margin-bottom: 0;
   margin-top: 1.5em;
 }
 
 .header h1 {
-  font-size: 2em;
-  margin-bottom: .1em;
-}
-
-.header h2 {
-  font-size: 1.8em;
+  font-size: 1.5em;
   margin-bottom: .1em;
 }
 
 .buttons {
   text-align: center;
+  margin: 1em 0;
+}
+
+.nav-buttons {
+  text-align: right;
   margin-bottom: 1em;
 }
 
 .buttons a {
   margin: 0 .3em;
+  text-align: center;
+}
+
+.nav-buttons a {
+  margin: 0 .3em;
 }
 
 .about {
-  font-size: smaller;
+  font-size: .8em;
   line-height: 1.3em;
 }
 
-.project {
-  text-align: center;
+.project, .gap-top {
   margin-top: 1em;
+}
+
+.no-gap-bottom {
+  margin-bottom: 0;
 }
 
 .project h5 {
   font-size: smaller;
+  margin-bottom: .8em;
+  color: #15212f;
+}
+
+.project a {
+  text-decoration: none;
+}
+
+.project span {
+  font-size: .8em;
+  font-weight: bold;
+  margin-left: .5em;
+}
+
+#post {
+  padding-right: 2em;
+}
+
+.index {
+  margin-top: 1em;
+}
+
+.index-nav {
+  margin-top: 3em;
+}
+
+.pull-right {
+  text-align: right;
+}
+
+.pull-right a {
+  padding-right: 2em;
 }

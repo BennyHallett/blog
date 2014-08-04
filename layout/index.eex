@@ -1,10 +1,13 @@
 <div class="index">
   <%= Enum.join(@content, "<br />\n") %>
 
-  <br />
-  <br />
-  <br />
-  <%= @prev %>
-  <br />
-  <%= @next %>
+  <div class="index-nav">
+    <div class="four columns alpha">
+      <%= @prev %> &nbsp;
+    </div>
+    <div class="four columns">&nbsp;</div>
+    <div class="four columns omega pull-right">
+      <%= @next %> &nbsp;
+    </div>
+  </div>
 </div>
