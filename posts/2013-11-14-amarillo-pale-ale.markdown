@@ -1,7 +1,6 @@
 ---
-layout: post
 title:  "Amarillo Pale Ale"
-date:   2013-11-14 10:40:00
+description:  "Amarillo Pale Ale"
 ---
 
 If you're just starting out in Homebrewing, you may have bought yourself a homebrew kit from your local home brew store, or maybe a large chain store. My advice would be, don't follow the instructions on the can of malt you get. 

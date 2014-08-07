@@ -19,13 +19,11 @@ After inheriting my first Rails project, one of the first things that confused m
 
 `&&` has the highest precedence, followed by `||`. Both and and or have the same precedence.
 
-{% highlight ruby %}
-false and false or true
-=> true
+    false and false or true
+    => true
 
-false and false || true
-=> false
-{% endhighlight %}
+    false and false || true
+    => false
 
 In the first example here, the expression is evaluated in order. So `false and false` is `false`, and taking that result, `false or true` is `true`.
 
@@ -35,25 +33,19 @@ In the second example, the `||` section is evaluated first. So `false || true` i
 
 For boolean logic, generally `&&` and `||` are used.
 
-{% highlight ruby %}
-def can_read?
-  (daytime? || inside?) && wearing_glasses?
-end
-{% endhighlight %}
+    def can_read?
+      (daytime? || inside?) && wearing_glasses?
+    end
 
 The and/or operators are generally used to chain methods together. This can be done because in Ruby, `nil` and `false` always resolve to `false`, where everything else resolves to `true`.
 
-{% highlight ruby %}
-start_engine and drive
-{% endhighlight %}
+    start_engine and drive
 
 In the example above, if the engine fails to start, then the vehicle won't drive. Another example may be the movement of a child. 
 
-{% highlight ruby %}
-def move
-  walk or crawl or roll
-end
-{% endhighlight %}
+    def move
+      walk or crawl or roll
+    end
 
 In this example, a child can move in multiple ways, but prefers the most efficient method. They will attempt to walk, and only attemt to crawl if walking fails. Similarly, they will only attempt to roll if crawling fails.
 

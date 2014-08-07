@@ -1,7 +1,6 @@
 ---
-layout: post
 title:  "Managing game state with stack-based screens"
-date:   2013-11-03 17:22:00
+description: "Managing game state with stack-based screens"
 ---
 For a while now I've messed around making game prototypes. These things are normally unpolished, little things that explore one or two game concepts. One element of games that has alluded me for quite some time, is finding a nice, simple way to manage the screen state, and transitioning between them.
 
