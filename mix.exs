@@ -13,7 +13,7 @@ defmodule Bennyhallett.Mixfile do
   end
 
   defp deps do
-    [{ :obelisk, "0.4.1" },
+    [{ :obelisk, "0.5.0" },
      { :yamerl, github: "yakaz/yamerl" }]
   end
 end

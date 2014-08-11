@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Benny Hallett | some catch phrase</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <%= @css %>
     <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css" />
     <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>

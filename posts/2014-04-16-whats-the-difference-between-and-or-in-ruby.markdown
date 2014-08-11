@@ -1,7 +1,6 @@
 ---
-layout: post
 title:  "What's the difference between and, or, && and || in Ruby?"
-date:   2014-04-16 06:46:00
+description:  "What's the difference between and, or, && and || in Ruby?"
 ---
 
 After inheriting my first Rails project, one of the first things that confused me was the multiple boolean logic operators. In Ruby, the operators include:

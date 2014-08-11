@@ -13,12 +13,12 @@ Wtf is a regular expression?
 
 Regular expressions are strings formatted using a special pattern notation that allow you to describe and parse text. Many programmers (even some good ones) disregard regular expressions as line noise, and it's a damned shame because they come in handy so often. Once you've gotten the hang of them, regular expressions can be used to solve countless real world problems.
 
-Regular expressions work a lot like the filename "globs" in Windows or *nix that allow you to specify a number of files by using the special * or ? characters (oops, did I just use a glob while defining a glob?). But with regular expressions the special characters, or metacharacters, are far more expressive.
+Regular expressions work a lot like the filename "globs" in Windows or \*nix that allow you to specify a number of files by using the special * or ? characters (oops, did I just use a glob while defining a glob?). But with regular expressions the special characters, or metacharacters, are far more expressive.
 
 Like globs, regular expressions treat most characters as literal text. The regular expression *mike*, for example, will only match the letters m - i - k - e, in that order. But regular expressions sport an extensive set of metacharacters that make the simple glob look downright primitive.
 
-Meet the metacharacters: ^[](){}.*?\|+$ and sometimes -
--------------------------------------------------------
+Meet the metacharacters: ^\[](){}.\*?\\|+$ and sometimes -
+----------------------------------------------------------
 
 I know, they look intimidating, but they're really nice characters once you get to know them.
 
@@ -58,7 +58,7 @@ The '?' metacharacter (question mark) means optional. It is placed after a chara
 
 If I wanted to match the english or american versions of the word 'flavor' I could use the regex *flavou?r*, which is interpreted as "f, followed by l, followed by a, followed by v, followed by o, followed by an optional u, followed by r."
 
-##The Other Quantifiers: '+' and '*'
+##The Other Quantifiers: '+' and '\*'
 
 Like the question mark, the '+' (plus) and '\*' (star) metacharacters affect the number of times the preceding character can appear in the expression (with '?' the preceding character could appear 0 or 1 times). The metacharacter '+' matches one or more of the immediately preceding item, while '\*' matches any number of the preceding item, including 0.
 

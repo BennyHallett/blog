@@ -15,8 +15,7 @@ The time and location could be interesting for a survival roguelike for a lot of
 * An interesting culture with their own fantasy and lore.
 * Small, nomadic communities with their alliances would make for a great world to explore.
 
-Mechanic ideas
-==============
+## Mechanic ideas
 
 * Typical roguelike permadeath.
 * An age system. You can die of old age, which should be an extremely difficult goal to achieve. As you get older, you should get injured easier and become slower.

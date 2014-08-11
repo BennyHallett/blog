@@ -1,7 +1,6 @@
 ---
-layout: post
 title:  "Simple Hefeweizen recipe"
-date:   2014-04-23 08:39:00
+description:  "Simple Hefeweizen recipe"
 ---
 
 German style wheat beers are some of my favourite beers to drink. I fell in love Hofbrau when I was over in Munich for Oktoberfest, and I've tried a few different beers over the last year.
