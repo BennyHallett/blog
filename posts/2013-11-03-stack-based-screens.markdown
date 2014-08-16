@@ -12,7 +12,7 @@ In other cases, the state of the previous screen is retained. For example, going
 
 There is also a third case, which was the one to give me the idea of stack based screens. When you're playing the game, sometimes you can hit escape, or bring up a menu, and a new menu or screen appears above the game screen, with the game screen rendered underneath, in it's paused state. This situation seems perfect for a stack, where the top most item has focus, and perhaps screens below it are also rendered.
 
-![Multiple layers of screens in DoomRL](/assets/doomrl.png)
+![Multiple layers of screens in DoomRL](assets/img/doomrl.png)
 
 As we can see in this screenshot from [DoomRL](http://doom.chaosforge.org), the game screen is rendered, then a partially transparent inventory screen is rendered over the top. We can also imagine that the main screen may also still exist in the stack, maintaining it's state for when the current game finishes. In this case our stack may look like
 

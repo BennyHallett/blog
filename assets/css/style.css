@@ -89,3 +89,12 @@ a:hover {
 .pull-right a {
   padding-right: 2em;
 }
+
+code, code.inline {
+  font-family: 'Ubuntu Mono', monospace !important;
+  color: #ea2212;
+}
+
+pre {
+  padding-left: 1em;
+}
