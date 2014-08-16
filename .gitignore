@@ -3,3 +3,12 @@
 /deps
 erl_crash.dump
 *.ez
+*.pyc
+output/*
+_build.sh
+_deploy.sh
+_site/*
+_build
+build
+posts
+deps
