@@ -8,7 +8,7 @@ Joe's Ancient Orange mead is a simple beginners mead, which takes only 20 minute
 
 I first heard about mead when browsing the [Aussie Home Brewer](http://aussiehomebrewer.com) non-beer forum. Having never tried mead before, I purchased a bottle of Maxwell Mead. It has an interesting taste. It's fairly sweet, and initially reminded me of port. For me, it's best served slightly warm.
 
-![JAO mead fermenting in a 5L demijohn](/assets/jao-mead.png)
+![JAO mead fermenting in a 5L demijohn](assets/img/jao-mead.png)
 
 I used [this JAO mead recipe](http://aussiehomebrewer.com/topic/32762-jao-the-ultimate-beginners-mead-recipe/) to create my batch. It was quite simple to make, and fairly inexpensive. I used some standard Australian honey from the supermarket, but the recipe could be improved by using fresh, locally sourced honey.
 

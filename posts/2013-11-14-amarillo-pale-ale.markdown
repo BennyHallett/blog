@@ -9,7 +9,7 @@ Ok maybe the first time you brew, use the can and follow the instructions. You'v
 
 However before you set off to do your second brew, read [John Palmer's amazing, free, online book, How To Brew](http://howtobrew.com). It started me on the track to actually crafting beers, rather than just re-creating a soulless, store-bought one.
 
-![Boiling my first ever wort](/assets/amarillo-pale-ale.png)
+![Boiling my first ever wort](assets/img/amarillo-pale-ale.png)
 
 This beer is the first beer I've ever brewed by boiling malt extract, and adding hops according to a schedule. I had an idea about the type of beer I wanted to make. I'm really loving bitter, heavily hopped pale ales at the moment, so I decided to try and create my own.
 

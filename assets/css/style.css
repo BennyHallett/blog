@@ -98,3 +98,13 @@ code, code.inline {
 pre {
   padding-left: 1em;
 }
+
+ul {
+  list-style: disc;
+  margin: 3em;
+}
+
+img {
+  border: 1px solid #ea2212;
+  padding: 2px;
+}

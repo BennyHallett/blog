@@ -12,7 +12,7 @@ More specifically, I didn't have the time available to dedicate to it. I thought
 
 It wasn't a complete failure though, the game progressed a fair way, and I learned a lot in the process.
 
-![Spyrl title screen](/assets/spyrl.png)
+![Spyrl title screen](assets/img/spyrl.png)
 
 **SpyRL features**
 
@@ -32,7 +32,7 @@ The features that were completed in SpyRL include
 * Enemies move randomly
 * Enemies attack anyone who moves adjacent to them
 
-![Spyrl game screen](/assets/gspyrl.png)
+![Spyrl game screen](assets/img/gspyrl.png)
 
 There are a bunch of things missing, such as win and lose states, and traps, that I will add into the game in the future.
 

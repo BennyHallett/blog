@@ -16,17 +16,13 @@ At the time of writing, delve isn't feature complete. Some key features, such as
 
 The last big feature of delve is the auto-roguelike. This feature allows developers to create an '@ walking around the dungeon' roguelike in a single simple command
 
-{% highlight bash %}
-delve gamename
-{% endhighlight %}
+    delve gamename
 
 To then start the game, you run
 
-{% highlight bash %}
-cd gamename
-bundle install
-ruby -Ilib bin/gamename
-{% endhighlight %}
+    cd gamename
+    bundle install
+    ruby -Ilib bin/gamename
 
 This game that you have just created includes:
 
