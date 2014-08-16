@@ -1,110 +1,102 @@
 body {
   font-size: 18px;
-  background-color: #f2f2f2;
   font-family: 'Ubuntu', sans-serif;
-}
-
-a, a:visited {
-  color: #15212f;
-}
-
-a:hover {
-  color: #ea2212;
+  background: #f0f0f0;
+  color: #3e4651;
 }
 
 .header {
-  margin-bottom: 0;
-  margin-top: 1.5em;
+  padding-top: 1em;
+}
+
+img.profile {
+  float: left;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
 }
 
 .header h1 {
-  font-size: 1.5em;
-  margin-bottom: .1em;
+  padding-top: 1.5em;
+  margin-bottom: .2em;
 }
 
-.buttons {
-  text-align: center;
-  margin: 1em 0;
+.header h2 {
+  font-weight: normal;
+  font-style: italic;
 }
 
-.nav-buttons {
-  text-align: right;
-  margin-bottom: 1em;
-}
-
-.buttons a {
-  margin: 0 .3em;
-  text-align: center;
-}
-
-.nav-buttons a {
-  margin: 0 .3em;
-}
-
-.about {
-  font-size: .8em;
-  line-height: 1.3em;
-}
-
-.project, .gap-top {
-  margin-top: 1em;
-}
-
-.no-gap-bottom {
-  margin-bottom: 0;
-}
-
-.project h5 {
-  font-size: smaller;
-  margin-bottom: .8em;
-  color: #15212f;
-}
-
-.project a {
+a, a:visited {
   text-decoration: none;
+  color: #f1654c;
 }
 
-.project span {
-  font-size: .8em;
-  font-weight: bold;
+a:hover {
+  text-decoration: underline;
+  color: #c9432a;
+}
+
+.header a {
+  text-decoration: none;
+  color: #3e4651;
+}
+
+.sidebar-item {
+  text-align: right;
+  margin-bottom: 1.5em;
+}
+
+.find-me a {
+  color: #3e4651;
   margin-left: .5em;
 }
 
-#post {
-  padding-right: 2em;
+.find-me a:hover {
+  color: #f1654c;
 }
 
-.index {
-  margin-top: 1em;
+.main {
+  line-height: 1.4em;
 }
 
-.index-nav {
-  margin-top: 3em;
+.main img {
+  max-width: 100%;
 }
 
-.pull-right {
-  text-align: right;
+.main ul {
+  list-style: disc;
+  padding-left: 3em;
 }
 
-.pull-right a {
-  padding-right: 2em;
+.sidebar-item ul {
+  padding: 0;
 }
 
 code, code.inline {
   font-family: 'Ubuntu Mono', monospace !important;
-  color: #ea2212;
+  color: #f1654c;
+  font-size: 0.95em;
 }
 
-pre {
-  padding-left: 1em;
+.index-nav {
+  margin-top: 4em;
 }
 
-ul {
-  list-style: disc;
-  margin: 3em;
+.index-nav a, .index-nav a:visited {
+  padding: .5em 1em;
+  color: #f0f0f0;
+  background-color: #f1654c;
+  border: 1px solid #f1654c;
 }
 
-img {
-  border: 1px solid #ea2212;
-  padding: 2px;
+.index-nav a:hover {
+  text-decoration: none;
+  background-color: #c9432a;
+}
+
+.pull-right {
+  text-align: right;
 }

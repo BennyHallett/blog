@@ -5,7 +5,7 @@
     <div class="four columns alpha">
       <%= @prev %> &nbsp;
     </div>
-    <div class="four columns">&nbsp;</div>
+    <div class="four columns alpha omega">&nbsp;</div>
     <div class="four columns omega pull-right">
       <%= @next %> &nbsp;
     </div>
