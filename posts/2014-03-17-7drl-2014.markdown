@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "7DRL 2014 Postmorten"
+title:  "7DRL 2014 Postmortem"
 date:   2014-03-17 08:02:00
 ---
 
