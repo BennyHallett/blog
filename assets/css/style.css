@@ -100,3 +100,7 @@ code, code.inline {
 .pull-right {
   text-align: right;
 }
+
+#post pre {
+  overflow: scroll;
+}
