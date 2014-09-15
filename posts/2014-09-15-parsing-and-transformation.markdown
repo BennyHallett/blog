@@ -5,9 +5,7 @@ description: "Exploring @pragdave's approach to Elixir, with parsing and transfo
 
 If you're yet to watch the [talks from ElixirConf](), do yourself a favour and go check them out. The one's I've seen so far have been amazing.
 
-The first one that I watched, is [Dave Thomas'](http://twitter.com/pragdave) keynote talk [Think Different(ly)](). This talk transformed the way I think about programming in Elixir. In this talk, Dave explains how he tackles a new language by writing a [Markdown]() parser, and how he came to understand programming in Elixir as parsing and transformation.
-
-If object oriented programming is about modelling and state manipulation, then functional programming is about data transformation. [Tweet this]().
+The first one that I watched is [Dave Thomas'](http://twitter.com/pragdave) keynote talk [Think Different(ly)](). This talk transformed the way I think about programming in Elixir. Dave explains how he tackles a new language by writing a [Markdown]() parser, and how he came to understand programming in Elixir as parsing and transformation.
 
 Lets look at a simple example to get us started. Say we have an API, and we want to have our endpoint take an identifier, and return some information about cats related to that id. We want to keep it fairly clean, so we only return the information that the caller would expect from this call, rather than all the data that we have related to this identifier.
 
