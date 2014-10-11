@@ -44,6 +44,7 @@
             <ul class="nav">
               <ul><a href="http://elixirquiz.github.io" target="_">Elixir Quiz</a></ul>
               <ul><a href="http://github.com/bennyhallett/obelisk" target="_">Obelisk</a></ul>
+              <ul><a href="http://github.com/bennyhallett/anubis" target="_">Anubis</a></ul>
               <ul><a href="http://github.com/bennyhallett/elixir-rss" target="_">Elixir RSS</a></ul>
             </ul>
           </div>
