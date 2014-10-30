@@ -1,5 +1,10 @@
 <div class="index">
-  <%= Enum.join(@content, "<br />\n") %>
+  <%= Enum.map @content, fn(post) ->
+    """
+    #{post.content}
+    <hr class="post-base" />
+    """
+  end %>
 
   <div class="index-nav">
     <div class="four columns alpha">

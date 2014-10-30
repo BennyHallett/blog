@@ -7,6 +7,7 @@ body {
 
 .header {
   padding-top: 1em;
+  margin-bottom: 3em;
 }
 
 img.profile {
@@ -103,4 +104,12 @@ code, code.inline {
 
 #post pre {
   overflow: scroll;
+}
+
+.post-base {
+  margin-bottom: 2em;
+}
+
+.post-title {
+  font-size: 1.5em;
 }
