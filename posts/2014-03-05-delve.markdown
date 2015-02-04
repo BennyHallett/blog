@@ -1,7 +1,7 @@
 ---
-layout: post
 title:  "delve - an opinionated roguelike library for Ruby"
-date:   2014-03-05 18:42:00
+description: "A library for creating roguelikes in Ruby"
+date: "March 5th, 2014"
 ---
 
 Delve is an opinionated library for creating roguelikes in the Ruby programming language. It's flexible enough to let you create your roguelike in any way you please, but it also lets you get up and running quickly if you adhere to it's style.

@@ -1,6 +1,7 @@
 ---
 title: Phoenix on Docker
 description: A simple Dockerfile for running a Phoenix app in a Docker container
+date: "October 12th, 2014"
 ---
 
 Today I started playing around with [Docker](http://docker.com), and I have to say that I'm pretty impressed.

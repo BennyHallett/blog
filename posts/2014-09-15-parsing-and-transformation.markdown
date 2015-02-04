@@ -1,6 +1,7 @@
 ---
 title: Parsing and Transformation
 description: "Exploring @pragdave's approach to Elixir, with parsing and transformation"
+date: "September 15th, 2014"
 ---
 
 If you're yet to watch the [talks from ElixirConf](http://www.confreaks.com/events/elixirconf2014), do yourself a favour and go check them out. The one's I've seen so far have been amazing.

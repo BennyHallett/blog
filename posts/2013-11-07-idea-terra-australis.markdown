@@ -1,6 +1,7 @@
 ---
 title:  "Roguelike idea: Terra Australis"
 description: "Roguelike idea: Terra Australis"
+date: "November 7th, 2013"
 ---
 
 I've been playing a lot of [Cataclysm DDA](http://en.cataclysmdda.com) lately, and have been enjoying the survival aspect of it. Right from the start you're in life-threatening danger, which requires a lot more strategy and planning than a typical hack-and-slash roguelike.

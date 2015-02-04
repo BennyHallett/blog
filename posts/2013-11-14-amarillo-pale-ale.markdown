@@ -1,6 +1,7 @@
 ---
 title:  "Amarillo Pale Ale"
 description:  "Amarillo Pale Ale"
+date: "November 14th, 2013"
 ---
 
 If you're just starting out in Homebrewing, you may have bought yourself a homebrew kit from your local home brew store, or maybe a large chain store. My advice would be, don't follow the instructions on the can of malt you get. 

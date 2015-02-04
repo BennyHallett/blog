@@ -1,7 +1,7 @@
 ---
-layout: post
 title:  "Joe's Ancient Orange Mead"
-date:   2013-11-18 07:02:00
+date: "November 18th, 2013"
+description: "Recipe for Joe's Ancient Orange Mead"
 ---
 
 Joe's Ancient Orange mead is a simple beginners mead, which takes only 20 minutes to make.

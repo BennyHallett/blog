@@ -1,7 +1,7 @@
 ---
-layout: post
 title:  "7DRL 2014 Postmortem"
-date:   2014-03-17 08:02:00
+description: "Postmortem from my attempt at the 2014 7 day roguelike challenge"
+date:   "March 17th, 2014"
 ---
 
 The 7 day roguelike challenge has been and gone for this year, and my participation in it can be summed up in a few words:

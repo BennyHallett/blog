@@ -1,6 +1,7 @@
 ---
 title:  "Peasant evm (Elixir Version Manager)"
 description:  "Peasant evm (Elixir Version Manager)"
+date: "July 28th, 2014"
 ---
 
 When starting out with Elixir I wanted a way to be able to switch versions easily, without uninstalling a previously installed version. Since Elixir changes frequently, and given it's young age and that it's coming up on a stable 1.0 version, it's not out of the question that some changes will be breaking changes. I've had this come up recently, where one library I was using required the 0.14.3 version of Elixir, but another library hadn't yet been made 0.14.3 compatible, so I had to quickly roll back to 0.14.2.

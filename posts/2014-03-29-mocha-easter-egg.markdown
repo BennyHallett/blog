@@ -1,6 +1,7 @@
 ---
 title:  "Mocha Easter Egg"
 description:  "Mocha Easter Egg"
+date: "March 29th, 2014"
 ---
 
 There's a neat little easter egg hidden within the [Mocha](https://github.com/freerange/mocha) source code.

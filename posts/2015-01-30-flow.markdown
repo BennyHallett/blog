@@ -1,6 +1,7 @@
 ---
 title: Flow
 description: "That mystical state where the whole world melts away and you are completely focussed on your tasks. How do we get more of that."
+date: "January 30th, 2015"
 ---
 
 Flow. That mystical state where the whole world melts away and we're 100%
@@ -27,9 +28,9 @@ I've known about Flow for a long time, but I didn't ever call it that. Some
 times it'd be known as _the zone_, but mostly it was rarely spoken about. It's
 worth talking about though, because it's one of the most enjoyable parts of
 being a software engineer and if we can learn to master it then we can
-<somethign>
+-somethign-
 
-When we get into a Flow state  <continue>
+When we get into a Flow state  -continue-
 
 * Laser sharp focus and concentration
 * Hours pass in minutes - pulled all nighters without really realising
@@ -48,9 +49,9 @@ flow.
 
 I find that the number one way to break my Flow is to interrupt me.
 
-<something about context switching>
+-something about context switching-
 
-<Pair programming exception> I think this is because you're not context
+-Pair programming exception- I think this is because you're not context
 switching
 
 

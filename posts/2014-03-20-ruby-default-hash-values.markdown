@@ -1,6 +1,7 @@
 ---
 title:  "Default hash values in Ruby"
 description:  "Default hash values in Ruby"
+date: "March 20th, 2014"
 ---
 
 Hashes in Ruby have an interesting property in that you can specify a default value for any item in the Hash. When we try to get a value out of a hash that doesn't exist, we get nil.
