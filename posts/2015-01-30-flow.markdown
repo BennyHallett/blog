@@ -47,7 +47,7 @@ flow.
 
 ### Interuptions
 
-I find that the number one way to break my Flow is to interrupt me.
+The number one way to break my Flow is to interrupt me.
 
 -something about context switching-
 
@@ -90,8 +90,6 @@ into Flow while doing it is to build a tool to automate it.
 One of the [virtues of a programmer]() is to be lazy. Not _I'm not going to do any
 work_ lazy, but _Why should I do this boring thing everyday when the computer
 can do it for me_ kind of lazy.
-
-
 
 Difficult - Break it up. Chunk it down into some easier to manage bits and set
 your sights on tackling them one at a time.
@@ -152,8 +150,19 @@ to while coding.
 
 #### A goal or purpose
 
-One more thing that I find very important is having a clear goal...
+One final thing that I find very important is having a clear goal.
 
+It can be difficult (although not unattainable) to achieve Flow when you sit
+down to _just code_ or _just write_. Better is to start with the intention of
+adding a specific feature to a project, or write a chapter of a book.
+
+Having a goal allows us to get a head start on our work. When we start with
+the goal in mind, we've already started working on the problem before we even
+sit down. The process of getting into Flow has started and we're free to focus
+on expressing our ideas in whatever format we choose.
+
+It also means we don't spend the first 10 to 15 minutes of our work time
+deciding what to work on.
 
 ## Final thoughts
 
