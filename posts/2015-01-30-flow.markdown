@@ -7,13 +7,12 @@ date: "January 30th, 2015"
 Flow. That mystical state where the whole world melts away and we're 100%
 focussed on what we're doing, and hours can pass in the blink of an eye.
 
-Most of us know this feeling. We may get it occassionally or we may get it
+Most of us know this feeling. We may get it occasionally or we may get it
 often. Our questions for today are how can we get into Flow more often, and once
 we do, how can we stay there longer?
 
 ## IDEAS
 
-* Tell me more about Flow - reference Dan Pink, affiliate link to his book
 * What kills Flow, and how can we avoid it?
   * Interruptions
 * How can we get into Flow more often?
@@ -22,39 +21,18 @@ we do, how can we stay there longer?
   * Understanding yourself - times, places, sorts of work.
 * More reading
 
-## Tell me more about Flow
+## What is Flow?
 
-I've known about Flow for a long time, but I didn't ever call it that. Some
-times it'd be known as _the zone_, but mostly it was rarely spoken about. It's
+I've known about Flow for a long time, even though I never really called it that. Some
+times I'd refer to it as _the zone_, but typically it was a topic that was rarely spoken about. It's
 worth talking about though, because it's one of the most enjoyable parts of
-being a software engineer and if we can learn to master it then we can
--somethign-
+being a software engineer. If we can learn to master it, we can have a profound
+affect on the enjoyment of our day to day job.
 
-When we get into a Flow state  -continue-
-
-* Laser sharp focus and concentration
-* Hours pass in minutes - pulled all nighters without really realising
-
-## What things kill Flow?
-
-From the conversations I've had with other software engineers about this topic,
-it seems like most (or even all) developers know what it's like to be in Flow.
-Some of us may also have a pretty good understanding of what it is that gets us
-into Flow.
-
-With that in mind, lets start by analyzing the things that can break us out of
-flow.
-
-### Interuptions
-
-The number one way to break my Flow is to interrupt me.
-
--something about context switching-
-
--Pair programming exception- I think this is because you're not context
-switching
-
-
+When we get into a Flow state our concentration and focus improve significantly,
+to the point where we lose track of time. I'm sure that many of us have spent
+all night working on a project, only realising the time that had passed once the
+sun has risen.
 
 ## How can we get into Flow more often?
 
@@ -63,17 +41,21 @@ circumstances that trigger flow.
 
 ### Goldilocks Tasks
 
-Remember the story of [Goldilocks and the 3 Bears?](). In this story ...
+Remember the story of [Goldilocks and the 3 Bears?](). In this story a young
+girl stumbles upon an empty house, and enters. She tries out various items in
+the house (food, beds, etc) and finds them to have varying properties relative to her
+preference. One bed was too soft, one bed was too hard, the other
+was just right. It's these just right tasks that we need to look for when we're
+trying to get into Flow.
 
-This is the type of task that [Dan Pink]() recommends in his [book Flow](). A
-task that isn't so easy for us that it's mundane, and not too difficult that
-it's overly frustrating. We're looking for tasks that are *just right*.
+A tasks that's *just right* should be one that's just beyond our current
+abilities. If it's too simple then the task can become boring and tedious. If
+it's too difficult then we can get frustrated and give up. But those tasks that
+are slightly beyond our reach give us something to strive for, something that we know is
+achievable and will be rewarding in the end.
 
-So what does it mean for a task to be just right?
-
-* Not mundane
-* Not too difficult
-* Some level of challenge to it
+This is the type of task that [Dan Pink]() recommends in his [book Flow](). Not
+too easy, not too difficult. *Just right*.
 
 ### Handling the mundane and extra challenging
 
@@ -88,25 +70,45 @@ If we're working on a mundane day-to-day task, the best way I've found to get
 into Flow while doing it is to build a tool to automate it.
 
 One of the [virtues of a programmer]() is to be lazy. Not _I'm not going to do any
-work_ lazy, but _Why should I do this boring thing everyday when the computer
+work_ lazy, but _why should I do this boring thing everyday when the computer
 can do it for me_ kind of lazy.
 
-Difficult - Break it up. Chunk it down into some easier to manage bits and set
-your sights on tackling them one at a time.
+So be lazy, [use the command line](), learn a [scripting]() [language](), and start
+automating those repetitive tasks.
+
+On the other hand, if you're working on a task that is too difficult there are
+several strategies you could use to work ensure that it doesn't become
+overwhelming and kill your Flow.
+
+The time honoured one is to break it down into smaller, more achievable chunks.
+
+Set your sights on tackling things one at a time. Having two completed tasks out
+of ten is much less overwhelming than having ten incomplete tasks, all sitting
+around 20% completion.
+
+Another technique that I like to use when tackling larger problems is pair
+programming. Having a second person working with you to give different
+perspectives and talk through problems with really helps.
 
 ### Know yourself
 
 The best way to get into Flow more often is to understand what it is that gets
 you into that state.
 
-Think back to the last time you felt like you we're in Flow. Where were you,
-what were you working on? Were you surrounded by people or by yourself. What
-time of day was it? Were you listening to music? If so was it classical, dance,
-rock?
+Think back to the last time you felt like you we're in Flow.
 
-All these things can contribute to you getting into Flow or not.
+* Where are you?
+* What problem are you working on?
+* Are you alone or working with or around others?
+* What time of day is it?
+* If you're listening to music, what is it?
 
-For me, I know that there are several factors that contribute to me getting into
+All these things can contribute to you getting into Flow or not, and it's worth
+getting to know which things work for you. You could even keep notes of these
+factors whenever you notice yourself in Flow, however be careful that it doesn't
+take you back out of it.
+
+For myself, I know that there are several factors that contribute to getting into
 Flow.
 
 #### Time of day
@@ -114,9 +116,10 @@ Flow.
 I would describe myself as a night owl. I find I can be really tired during the
 day, and then get a burst of energy around 9pm.
 
-This is also the time that I find I get into Flow more easily. I remeber nights
-where I've been programming like mad only to realise it's 4am and I should
-probably be asleep.
+This is also the time that I find I get into Flow more easily. I remember nights
+where I've been programming furiously only to realise it's 4am and I should
+probably be asleep. Even then it can be hard to get to sleep, my brain
+still working hard on the problem.
 
 For others though, the morning works better. I've read several times that some
 of the most productive people in the world get up at 4am or 5am and spend the
@@ -135,11 +138,12 @@ get into Flow quickly, the coffee normally goes cold before I've finished it.
 
 #### Music
 
-Some people like it, others don't.
+For some it will help, for others it won't.
 
 In my case, music helps me shut out the world around me so that I can focus on
-the task at hand. Sometimes where you need to do your work, especially an open
-plan office, can be noisy. Blocking out the surrounding world can be useful.
+the task at hand. Sometimes the location that you need to do your work can be noisy,
+especially in an open plan office, can be noisy. Blocking out the surrounding
+world is useful.
 
 The type of music you listen to can have different effects as well. I find that
 music with lyrics can be distracting, and prefer to work to intrumental dance
@@ -163,6 +167,38 @@ on expressing our ideas in whatever format we choose.
 
 It also means we don't spend the first 10 to 15 minutes of our work time
 deciding what to work on.
+
+## What things kill Flow?
+
+From the conversations I've had with other software engineers about this topic,
+it seems that most (perhaps even all) developers know what it's like to be in Flow.
+
+Some of us may have a pretty good understanding of what it is that gets us
+into Flow, and likely, we know exactly what it is that takes us out of Flow.
+
+### Interruptions
+
+The number one way to break my Flow is to interrupt me. I've spent hours building
+up a mental model of the problem, and even a small interruption can make that
+model disappear in an instant.
+
+I think this is because generally our brains are pretty bad at multi tasking.
+There is an idea that we can [only keep 6 things in our brain at any one
+time](). When those things are all parts of one larger thing -continue-
+
+One exception to the idea of the solitary software engineer working away on
+their own is pair programming.
+
+I find it can be an intense experience, and definitely help with getting into
+Flow for a number of reasons.
+
+Firstly, even though discussions are taking place, they're almost always
+focussed on the problem that's being solved. There's also very little urge to
+check emails or Twitter, because the other person is there right by your side.
+
+It helps keep interruptions at bay. A person is less likely to walk up and
+start talking to you if you're already sitting at a desk working with someone
+else.
 
 ## Final thoughts
 
