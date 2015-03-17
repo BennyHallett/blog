@@ -79,3 +79,24 @@ img.profile {
   width: 80px;
   height: 80px;
 }
+
+.footer {
+  background-color: #171b1e;
+  color: white;
+  margin-top: 1em;
+  padding: 1em;
+  font-size: 14px;
+}
+
+.footer li {
+  list-style: none;
+  margin-bottom: .2rem;
+}
+
+.main a, .footer a {
+  text-decoration: none;
+}
+
+.main a:hover, .footer a:hover {
+  text-decoration: underline;
+}
