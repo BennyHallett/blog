@@ -102,6 +102,97 @@ function. Here we use a combination of tail recursion and [pattern
 matching](http://elixir-lang.org/getting-started/pattern-matching.html) to
 achieve our goal.
 
-* Remove - what if it doesnt exist?
-* Load - what if the file doesn't exist
-* Save
+Let's go over the 3 function heads individually:
+
+* The first is our terminating clause. When out input list has been exhausted,
+  we can return the output list. Note that we reverse the list, which is
+commonly required when using tail recursion to process a list.
+* The second function head is invoked when the head of our input list is the same
+  as the item we're looking to remove. In this case, we continue our processing
+without including the item in the output list.
+* The final one is invoked in most cases, when the head of the input list is not
+  the item we're looking to remove. We add the item to the output list and
+continue on.
+
+We've got ourselves a nice model for out Todo List but we're missing something:
+Persistence
+
+Let's save our list to a file, overwritting it if it already exists.
+
+It's worth talking about format at this point. We need to agree on a simple
+format to store our todo list as. Let's just use a simple text based file, with
+each item in the todo list on a new line.
+
+Again, we should start by writing a test. Lets create a new test file, to
+contain our tests regarding persistence, and then add our first test.
+
+    defmodule PersistenceTest do
+      use ExUnit.Case
+
+      @filename '/tmp/todolist'
+
+      setup do
+        on_exit fn -> @filename |> File.rm end
+      end
+
+      test "save a todo list" do
+        list = ExTodo.TodoList.create
+        |> ExTodo.TodoList.add("first")
+        |> ExTodo.TodoList.add("second")
+        |> ExTodo.TodoList.add("third")
+        |> ExTodo.TodoList.save(@filename)
+
+        contents = File.read!(@filename)
+
+        assert "third\nsecond\nfirst" == contents
+      end
+
+    end
+
+In this test module we've created a setup task that will delete our temporary
+todo list after it's created. If you're on Windows, you may need to change the
+location of the file in _@filename_
+
+Our test simply creates a new Todo List, saves it, and asserts that the contents
+of the file are as we expect.
+
+With that test failing, lets save our list.
+
+Create a new save function in the ExTodo.TodoList module, that looks like:
+
+    def save(list, filename), do: File.write(filename, Enum.join(list, "\n"))
+
+We simply convert the list into a newline separated string, and write that out
+to the given filename.
+
+Our last item required for our TodoList module is loading the file back out.
+We've almost already done it in our test, so this one should be fairly straight
+forward.
+
+Lets add our test
+
+    test "load a todo list" do
+      File.write(@filename, "third\nsecond\nfirst")
+
+      list = ExTodo.TodoList.load(@filename)
+
+      assert ["third", "second", "first"] == list
+    end
+
+And we can implement it by reading in the filename and splitting the string on
+the newline character. We must be careful to include the trim option, so that we
+don't get empty items if the file ends in a newline
+
+    def load(filename), do: filename |> File.read! |> String.split("\n", trim: true)
+
+## That's all for part one
+
+That's all we've got time for in part one of this exercise. We've built
+ourselves a simple TodoList module that allows us to create, modify, save and
+load our todo lists.
+
+In the next installment we'll finish off the application, learning how to use
+Anubis to build a command line interface to interact with our Todo Lists. We'll
+look at building a command line app with multiple commands, using a runtime
+configuration file to automatically tell us where to load and save our todo
+lists, and look at command line switches to change that at runtime.
