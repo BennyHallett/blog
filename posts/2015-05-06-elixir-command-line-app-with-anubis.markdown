@@ -1,45 +1,81 @@
 ---
-title: Creating a command line app in Elixir with Anubis
-description: Learn how to create a simple command line application using Elixir and the Anubis framework. We will be creating a simple application to manage our TODO lists.
+title: Creating a command line app in Elixir with Anubis, Part one.
+description: Learn how to create a simple command line application using Elixir and the Anubis framework. We will be creating a simple application to manage our TODO lists. In part one we will be creating our TODO library.
 date: "May 5th, 2015"
 ---
 
-## INTRODUCTION
+[Anubis](https://github.com/BennyHallett/anubis) is a simple command line
+application library for Elixir. Today we'll be looking at how to create a simple
+application using Anubis, making use of all of it's features.
 
-...
+The application that we'll be building is the slightly overused TODO list
+example. We'll be creating a command line application to manage one or more of
+these lists.
+
+This is part one of the tutorial, in which we will create our TODO library.
+
+Let's get started.
 
 ### Creating the shell of our application
 
-Firstly we want to create our app
+Fire up your favourite shell and follow type in the commands below. (I'm using
+bash in Ubuntu. Other shell / distro combinations shouldn't have any affect, but
+[please let me know](http://twitter.com/bennyhallett) if they do).
+
+Firstly we want to create our Elixir project. We can do that by using mix:
 
     $ mix new extodo --module ExTodo
     $ cd extodo
 
-Add anubis as a dependency and install it
+Our next step is to add anubis as a dependency and install it. Anubis should be
+the only dependency that we need.
+
+Add the following to your mix.exs file:
 
     deps: [{:anubis, "~> 0.3.0"}]
 
+And then get mix to download the project's dependencies and compile them:
+
     $ mix do deps.get, compile
 
-Next up we want to build our TodoList. Should be essentially an array but lets
-do it properly
+### A TodoList library
 
-First off we want to be able to create a new todo list, so lets write a test
+The aim for this article will be to build our TodoList library. We won't be
+making use of Anubis today, but we'll be in a good place to hook everything
+together in the next article.
 
-    test "create a new todo list" do
-      assert [] == ExTodo.TodoList.create
+On the face of it, our TodoList is just a list for us to put things into and
+take them back out of. We could simply use the `List` module functions and be
+done with it, but let's try to model our TodoList, along with a suite of tests,
+as an exercise.
+
+First thing's first, we want to be able to create a new todo list. Lets start
+by writing a test. Create a new test file at `./test/todo_list_test.exs', and
+let's begin:
+
+    defmodule TodoListTest do
+      use ExUnit.Case
+
+      test "create a new todo list" do
+        assert [] == ExTodo.TodoList.create
+      end
+
     end
 
-Run that and it fails. Lets implement it. Create a file `./lib/extodo/todo_list.ex`
-and create the `ExTodo.TodoList` module, and implement `create`
+We can run that test and see that it fails, because we haven't yet created
+our`ExTodo.TodoList` module. Lets change that.
+
+Create a file at `./lib/extodo/todo_list.ex` and create the `ExTodo.TodoList`
+module. Lets implement the `create` function:
 
     defmodule ExTodo.TodoList do
       def create, do: []
     end
 
-Now our test passes.
+That's a very simple implementation, and as we mentioned earlier, it's just a
+list.
 
-Next lets try to add an entry to the list. We start again by writing another
+Our test passes now, so next lets try to add an entry to the list. We start again by writing another
 test.
 
     test "add an item to the list" do
@@ -52,9 +88,15 @@ test.
       assert ["TWO", "ONE"] == two
     end
 
-Again, we implement this. Lets use the `[head|tail]` operator to implement this:
+Given Elixir's immutable data types, we expect to end up with two lists here
+rather than one.
+
+Go back into our TodoList implementation and add the `add` function. Lets use
+the `[head|tail]` operator to implement this:
 
     def add(todo, item), do: [item|todo]
+
+Run the tests again to confirm that we've achieved our goal.
 
 This works great but we have one limitation. What happens if we add the same
 item twice? We want to ensure that each element only appears in our list once,
@@ -88,8 +130,8 @@ list.
     end
 
 We could easily use the built in function `List.delete` to remove the item, but
-lets go it alone and use [tail
-recursion](http://stackoverflow.com/a/37010/109246) to implement this.
+lets explore functional programming a little more and use [tail
+recursion](http://stackoverflow.com/a/37010/109246) instead.
 
     def remove(todo, item), do: _remove(todo, item, [])
 
@@ -98,13 +140,13 @@ recursion](http://stackoverflow.com/a/37010/109246) to implement this.
     defp _remove([head|tail], item, output), do: _remove(tail, item, [head|output])
 
 As we see here, our `remove` function simply delegates to the private `_remove`
-function. Here we use a combination of tail recursion and [pattern
-matching](http://elixir-lang.org/getting-started/pattern-matching.html) to
-achieve our goal.
+function, passing in an empty output list. Here we use a combination of tail
+recursion and [pattern matching](http://elixir-lang.org/getting-started/pattern-matching.html)
+to achieve our goal.
 
 Let's go over the 3 function heads individually:
 
-* The first is our terminating clause. When out input list has been exhausted,
+* The first is our terminating clause. When our input list has been exhausted,
   we can return the output list. Note that we reverse the list, which is
 commonly required when using tail recursion to process a list.
 * The second function head is invoked when the head of our input list is the same
@@ -113,6 +155,10 @@ without including the item in the output list.
 * The final one is invoked in most cases, when the head of the input list is not
   the item we're looking to remove. We add the item to the output list and
 continue on.
+
+Run the tests again and see that they all pass. No we're getting somewhere!
+
+### Persistence
 
 We've got ourselves a nice model for out Todo List but we're missing something:
 Persistence
