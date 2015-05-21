@@ -19,7 +19,7 @@ Let's get started.
 ### Creating the shell of our application
 
 Fire up your favourite shell and follow type in the commands below. (I'm using
-bash in Ubuntu. Other shell / distro combinations shouldn't have any affect, but
+bash in Ubuntu. Other shell / distro combinations shouldn't make any difference, but
 [please let me know](http://twitter.com/bennyhallett) if they do).
 
 Firstly we want to create our Elixir project. We can do that by using mix:
@@ -27,7 +27,7 @@ Firstly we want to create our Elixir project. We can do that by using mix:
     $ mix new extodo --module ExTodo
     $ cd extodo
 
-Our next step is to add anubis as a dependency and install it. Anubis should be
+Our next step is to add Anubis as a dependency and install it. Anubis should be
 the only dependency that we need.
 
 Add the following to your mix.exs file:
@@ -161,15 +161,14 @@ Run the tests again and see that they all pass. No we're getting somewhere!
 ### Persistence
 
 We've got ourselves a nice model for out Todo List but we're missing something:
-Persistence
+_Persistence_
 
-Let's save our list to a file, overwritting it if it already exists.
+Before we get started, it's worth talking about the format of our file. We need
+to agree on a simple format to store our todo list as, and the simplest one I
+can think of is a text based file, with each item in the todo list on a new
+line.
 
-It's worth talking about format at this point. We need to agree on a simple
-format to store our todo list as. Let's just use a simple text based file, with
-each item in the todo list on a new line.
-
-Again, we should start by writing a test. Lets create a new test file, to
+Once again, we should start by writing a test. Lets create a new test file, to
 contain our tests regarding persistence, and then add our first test.
 
     defmodule PersistenceTest do
@@ -196,7 +195,7 @@ contain our tests regarding persistence, and then add our first test.
     end
 
 In this test module we've created a setup task that will delete our temporary
-todo list after it's created. If you're on Windows, you may need to change the
+todo list after it's created. If you're on Windows, you will need to change the
 location of the file in _@filename_
 
 Our test simply creates a new Todo List, saves it, and asserts that the contents
@@ -211,8 +210,8 @@ Create a new save function in the ExTodo.TodoList module, that looks like:
 We simply convert the list into a newline separated string, and write that out
 to the given filename.
 
-Our last item required for our TodoList module is loading the file back out.
-We've almost already done it in our test, so this one should be fairly straight
+The last item required for our TodoList module is loading the file again.
+We've almost already done this in our test, so this one should be fairly straight
 forward.
 
 Lets add our test
@@ -225,7 +224,7 @@ Lets add our test
       assert ["third", "second", "first"] == list
     end
 
-And we can implement it by reading in the filename and splitting the string on
+We can implement it by reading in the filename and splitting the string on
 the newline character. We must be careful to include the trim option, so that we
 don't get empty items if the file ends in a newline
 
@@ -238,7 +237,9 @@ ourselves a simple TodoList module that allows us to create, modify, save and
 load our todo lists.
 
 In the next installment we'll finish off the application, learning how to use
-Anubis to build a command line interface to interact with our Todo Lists. We'll
-look at building a command line app with multiple commands, using a runtime
-configuration file to automatically tell us where to load and save our todo
-lists, and look at command line switches to change that at runtime.
+[Anubis](https://github.com/BennyHallett/anubis) to build a command line
+interface to interact with our Todo Lists.
+
+We'll look at building a command line app with multiple commands, using a
+runtime configuration file to automatically tell us where to load and save our
+todo lists, and look at command line switches to change that at runtime.
